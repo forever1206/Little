@@ -1,0 +1,145 @@
+/* 全局样式 */
+
+h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, span, em, b, p, a, div, blockquote,
+body, strong, section, aside, figure, input, textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+
+b, strong {
+    font-weight: inherit;
+}
+
+input {
+    outline: none;
+}
+
+a, input, textarea {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+}
+
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    background-color: #fff;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    font-size: 14px;
+    /*-webkit-user-select: none;*/
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+*html{
+	background: url(about:black) fixed;
+}
+#wrap{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#nav{
+	height:50px;
+	width:100%;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	border-bottom:1px solid gray;
+	position: fixed;
+	_position:absolute;
+	z-index: 999;
+	_top:expression(eval(document.documentElement.scrollTop));
+}
+
+#content{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#content .page#footer{
+    height: 14%;
+    background: greenyellow;
+}
+#content .page{
+    height: 14%;
+    width: 100%;
+    font-size: 30px;
+}
+
+#content .one{
+	background:#C94E50;
+}
+#content .two{
+	background:#FFA422;
+}
+#content .three{
+	background:#F05183;
+}
+#content .four{
+	background:#6CD5E2;
+}
+#content .five{
+	background:#43155E;
+}
+#content .six{
+	background:#1C232B;
+}
+
+#back{
+	color:#fff;
+	font-size: 30px;
+	width:60px;
+	height: 60px;
+	border:2px solid #ccc;
+    background: #ccc;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+    _position:absolute;
+    _right:50px;
+    _top:expression(eval(document.documentElement.clientHeight-this.offsetHeight-50+document.documentElement.scrollTop));
+    z-index: 999;
+}
+#li-div{position: fixed;right: 10px;top:50%;margin-top:-75px;_position:absolute;_top: expression( eval(document.documentElement.scrollTop+400));_right:10px;}
+/* IE6 伪 fixed 防抖 */
+*html {
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+
+/**html .li-fixed{*/
+    /*position: absolute;*/
+    /*top: expression( eval(document.documentElement.scrollTop+400));*/
+    /*right:10px;*/
+/*}*/
+#con li a{display: block;width: 20px;height: 20px;text-decoration: none;background: url("../images/pan-241.png") no-repeat;_background: url("../images/pan-8.png") no-repeat;margin-bottom: 5px;}
+#con .red{background: url("../images/pan-241.png") no-repeat center bottom;_background: url("../images/pan-81.png") no-repeat center bottom;}
+#hh{position: fixed;top:100px;}
