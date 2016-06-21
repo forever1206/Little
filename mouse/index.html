@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="http://js.wanmeiyueyu.com/public/jquery/jquery-1.10.2.min.js"></script>
+    <style>
+        body{margin:0;padding:0;}
+        #div1{width:500px;height:500px;background: #ff0000;}
+        #div2{width:300px;height:300px;background: rgba(0,0,0,0.5);position: absolute;top:100px;left:100px;}
+    </style>
+    <script>
+        $(function(){
+            var center={
+                x:250,
+                y:250
+            };
+
+
+            function showMove(node,e,dif){
+                var l=(e.clientX-center.x)/dif,
+                        t=(e.clientY-center.y)/dif;
+                node.css({
+                    'left':l,
+                    'top':t
+                })
+                window.document.title= '坐标X'+e.clientX+',坐标Y'+ e.clientY;
+                document.getElementById('result').innerHTML = '坐标X'+e.clientX+',坐标Y'+ e.clientY;
+            }
+            function moveLayer(e)
+            {
+                showMove($("#div1"),e,7);
+                showMove($("#div2"),e,8);
+            }
+            $('#div').on('mousemove',function(e){
+                moveLayer(e);
+            })
+        })
+    </script>
+</head>
+<body>
+
+<div id="div">
+    <div id="div1">星星点点</div>
+    <div id="div2">天气不错，有雾霾</div>
+</div>
+<p id="result"></p>
+</body>
+</html>
